@@ -2,7 +2,7 @@ from flask import Flask, render_template,request
 import score as s
 app = Flask(__name__)
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/semantic',methods=['GET','POST'])
 def hello():
     score_pred = 0.0
     mk = 0.0
